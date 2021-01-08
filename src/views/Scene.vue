@@ -73,10 +73,17 @@ export default {
       );
 
       // 添加地面
-      this.BABYLON.MeshBuilder.CreateGround("ground", {
+      const ground = this.BABYLON.MeshBuilder.CreateGround("ground", {
         width: 10,
         height: 10
       });
+
+      // 地面颜色
+      const groundMat = new this.BABYLON.StandardMaterial("groundMat",scene);
+      groundMat.diffuseColor = new this.BABYLON.Color3.Green();
+      ground.material = groundMat;
+
+
       return scene;
     },
     layout() {

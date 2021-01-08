@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Box from "@/views/scene/house/scene/Box";
-import Roof from "@/views/scene/house/scene/Roof";
+import Box from "@/views/scene/house/modules/Box";
+import Roof from "@/views/scene/house/modules/Roof";
 
 export default {
   name: "House",
